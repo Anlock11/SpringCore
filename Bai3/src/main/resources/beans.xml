@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helloWorld1" class="com.example.bai3.HelloWorld">
+        <property name="mess" value="inject by set"></property>
+    </bean>
+    <bean id="helloWorld2" class="com.example.bai3.HelloWorld">
+        <constructor-arg value="inject by contructor" type="java.lang.String"></constructor-arg>
+    </bean>
+</beans>
