@@ -13,7 +13,7 @@ public class Bai7Application {
         ApplicationContext contenx = new ClassPathXmlApplicationContext("beans.xml");
         DataSource dt = (DataSource) contenx.getBean("dataSource");
         dt.print();
-
+        System.out.println("Hello");
 
     }
 
