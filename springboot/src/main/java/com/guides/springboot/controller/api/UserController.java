@@ -1,18 +1,22 @@
-package com.guides.springboot.controller;
+package com.guides.springboot.controller.api;
 
 import com.guides.springboot.entity.Users;
 import com.guides.springboot.service.UserService;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@AllArgsConstructor
-@RequestMapping("api/users")
+@Controller
+@Component
+@RequestMapping("/users")
 public class UserController {
+    @Autowired
     private UserService userService;
 
     // build create User REST API
