@@ -20,11 +20,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(users);
     }
 
-    @Override
-    public Users getUserById(Long userId) {
-        Optional<Users> optionalUsers = userRepository.findById(userId);
-        return optionalUsers.get();
-    }
+
 
     @Override
     public List<Users> getAllUsers() {
